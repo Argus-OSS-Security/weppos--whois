@@ -1,12 +1,13 @@
 ---
 name: Release
 
-on:
-  workflow_dispatch:
-  push:
-    tags:
-      - v*.*.*
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   push:
+#     tags:
+#       - v*.*.*
+# 
 jobs:
   release:
     runs-on: ubuntu-latest
